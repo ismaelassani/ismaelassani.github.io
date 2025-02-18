@@ -208,10 +208,14 @@ input, select, textarea {
 		margin: 3em 0;
 	}
 
-	p, ul, ol, dl, table {
+	/*p, ul, ol, dl, table {
 		margin-bottom: 2em;
 	}
-
+        */
+	p, ul, ol, dl, table {
+    		margin-bottom: 1.5em; /* Réduction de l'espacement */
+    		font-size: 12pt; /* Texte légèrement plus petit */
+	}
 	header {
 		margin: 0 0 3em 0;
 	}
@@ -2077,7 +2081,8 @@ input, select, textarea {
 			color: #fff;
 			text-decoration: none;
 			outline: 0;
-			font-weight: 600;
+			font-weight: 500;
+			font-size: 0.9em;
 			border-radius: 8px;
 			color: #fff;
 			height: 2.5em;
