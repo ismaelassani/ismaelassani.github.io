@@ -111,7 +111,7 @@ input, select, textarea {
     		line-height: 1.6em;
     		color: #333; /* Texte plus foncé pour meilleure lisibilité */
     		font-weight: 300;
-    		font-size: 12pt; /* Taille réduite */
+    		font-size: 10pt; /* Taille réduite */
 	}
 	a {
 		-moz-transition: color .2s ease-in-out;
@@ -213,8 +213,9 @@ input, select, textarea {
 	}
         */
 	p, ul, ol, dl, table {
-    		margin-bottom: 1.5em; /* Réduction de l'espacement */
+    		margin-bottom: 1.4em; /* Réduction de l'espacement */
     		font-size: 12pt; /* Texte légèrement plus petit */
+		line-height: 1.4;
 	}
 	header {
 		margin: 0 0 3em 0;
