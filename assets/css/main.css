@@ -2070,12 +2070,24 @@ input, select, textarea {
    			max-width: 1200px;
 	}
 
+	.photo-container {
+	    display: flex;
+	    flex-direction: column; /* Arrange les éléments en colonne */
+	    align-items: center; /* Centre l'image et le texte horizontalement */
+	    text-align: center; /* Centre le texte */
+	}
+	
+	.photo-container img {
+	    width: 100%; /* Garde l'image responsive */
+	    max-width: 250px; /* Taille maximale pour éviter qu'elle soit trop grande */
+	    border-radius: 50%; /* Rend l'image circulaire (facultatif) */
+	}
+	
 	.photo-caption {
-    			text-align: center;
-    			font-size: 14px;
-    			color: #555;
-    			margin-top: 10px;
-    			font-weight: 500;
+	    margin-top: 10px; /* Espacement entre l'image et le texte */
+	    font-size: 14px;
+	    color: #555;
+	    font-weight: 500;
 	}
 
 	.logo h1 {
