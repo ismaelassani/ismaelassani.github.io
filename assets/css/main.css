@@ -2070,6 +2070,14 @@ input, select, textarea {
    			max-width: 1200px;
 	}
 
+	.photo-caption {
+    			text-align: center;
+    			font-size: 14px;
+    			color: #555;
+    			margin-top: 10px;
+    			font-weight: 500;
+	}
+
 	.logo h1 {
     			font-size: 18px;
     			color: white;
