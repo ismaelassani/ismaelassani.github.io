@@ -2185,19 +2185,23 @@ input, select, textarea {
     background: #358fb3;
 }
 
-/* ======= Contact Page Styling ======= */
+.wrapper.style4 {
+    background: #282828;  /* Couleur de fond sombre */
+    color: #ffffff;       /* Texte en blanc pour le contraste */
+    padding: 50px 0;
+}
 
 .contact-info, .contact-links, .contact-form {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.1);  /* Fond semi-transparent */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
+    color: #ffffff;  /* Texte en blanc */
 }
 
 .contact-info h3, .contact-links h3, .contact-form h3 {
-    color: #333;
-    margin-bottom: 10px;
+    color: #43B3E0;  /* Titre en bleu pour plus de lisibilité */
     border-bottom: 2px solid #43B3E0;
     padding-bottom: 5px;
 }
@@ -2219,7 +2223,6 @@ input, select, textarea {
 .contact-links ul li a:hover {
     color: #358fb3;
 }
-
 
 /* Articles */
 
