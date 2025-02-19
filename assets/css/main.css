@@ -2070,12 +2070,21 @@ input, select, textarea {
    			max-width: 1200px;
 	}
 	
+	.image-container {
+	    text-align: center; /* Centre tout le contenu */
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    justify-content: center;
+	}
+	
 	.photo-caption {
-	    text-align: center;
 	    font-size: 14px;
 	    color: #555;
-	    margin-top: 10px;
+	    margin-top: 10px; /* Espace entre l'image et le texte */
 	    font-weight: 500;
+	    text-align: center; /* Assure que le texte reste centré */
+	    width: 100%;
 	}
 
 	.logo h1 {
