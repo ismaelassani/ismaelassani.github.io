@@ -2059,10 +2059,27 @@ input, select, textarea {
 		cursor: default;
 		height: 3.5em;
 		line-height: 3.5em;
+		display:flex;
 	}
 
+	.nav-content {
+    			display: flex;
+    			justify-content: space-between;
+    			align-items: center;
+    			width: 90%;
+   			max-width: 1200px;
+	}
+
+	.logo h1 {
+    			font-size: 18px;
+    			color: white;
+    			margin: 0;
+    			font-weight: bold;
+	}
 		#nav ul {
 			margin-bottom: 0;
+			gap: 15px;
+			display: flex;
 			list-style: none;
 			padding-left: 0;
 		}
@@ -2070,6 +2087,14 @@ input, select, textarea {
 		#nav li {
 			display: inline-block;
 			padding-left: 0;
+		}
+
+		#nav ul li a {
+    			color: white;
+    			text-decoration: none;
+    			font-size: 14px;
+    			font-weight: 500;
+    			transition: color 0.3s ease;
 		}
 
 		#nav a {
@@ -2092,7 +2117,8 @@ input, select, textarea {
 		}
 
 			#nav a:hover {
-				color: #fff !important;
+				/*color: #fff !important;*/
+				color: #43B3E0;
 				background: #383838;
 			}
 
