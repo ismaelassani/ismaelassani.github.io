@@ -2146,6 +2146,45 @@ input, select, textarea {
 					border-top: solid 0.6em #282828;
 				}
 
+
+/* ======= CV & Research Sections ======= */
+
+.cv-content, .research-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cv-content h3, .research-content h3 {
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #43B3E0;
+    padding-bottom: 5px;
+}
+
+.cv-content ul, .research-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cv-content ul li, .research-content ul li {
+    padding: 5px 0;
+}
+
+.cv-content .button {
+    display: inline-block;
+    background: #43B3E0;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cv-content .button:hover {
+    background: #358fb3;
+}
+
 /* Articles */
 
 	body > article {
