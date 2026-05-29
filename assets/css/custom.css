@@ -1,0 +1,252 @@
+/* Custom refinements for Ismael Assani's personal website. */
+
+body {
+  padding-top: 4.5em;
+}
+
+body.lang-mode-en .lang-fr,
+body.lang-mode-fr .lang-en {
+  display: none !important;
+}
+
+#nav {
+  height: auto;
+  min-height: 4.5em;
+  line-height: normal;
+  padding: 0.7em 0;
+}
+
+#nav .nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  width: 92%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#nav .main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35em;
+  margin: 0;
+}
+
+#nav .main-nav li {
+  padding-left: 0;
+}
+
+#nav a {
+  height: auto;
+  line-height: 1.25em;
+  padding: 0.65em 0.9em;
+  white-space: nowrap;
+}
+
+.logo h1 {
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.language-switch {
+  display: flex;
+  gap: 0.35em;
+  align-items: center;
+}
+
+.language-switch button {
+  appearance: none;
+  border: 1px solid rgba(255,255,255,0.35);
+  background: transparent;
+  color: #fff;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.8em;
+  padding: 0.45em 0.75em;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: none;
+  text-shadow: none;
+  background-image: none;
+  max-width: none;
+}
+
+
+.language-switch button.active-language,
+.language-switch button:hover {
+  background: #43B3E0;
+  border-color: #43B3E0;
+}
+
+.hero-text {
+  text-align: left;
+}
+
+.hero-text h1 {
+  line-height: 1.2em;
+}
+
+.hero-actions,
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8em;
+  margin-top: 1.25em;
+}
+
+.cv-grid,
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25em;
+  text-align: left;
+  margin-top: 2em;
+}
+
+.info-card,
+.publication-card,
+.project-card {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 14px;
+  padding: 1.5em;
+  box-shadow: 0 4px 22px rgba(0,0,0,0.06);
+}
+
+.info-card h3,
+.publication-card h4,
+.project-card h2 {
+  color: #2d2d2d;
+  margin-bottom: 0.65em;
+  line-height: 1.25em;
+}
+
+.info-card ul,
+.publication-card ul,
+.project-card ul {
+  list-style: disc;
+  padding-left: 1.25em;
+}
+
+.info-card li,
+.publication-card li,
+.project-card li {
+  margin: 0.45em 0;
+}
+
+.wide-card {
+  text-align: left;
+  margin-bottom: 2em;
+}
+
+.publication-list,
+.project-list {
+  display: grid;
+  gap: 1.25em;
+  text-align: left;
+  margin-top: 1.5em;
+}
+
+.publication-card,
+.project-card {
+  background: #fff;
+}
+
+.publication-card p,
+.project-card p {
+  margin-bottom: 0.8em;
+}
+
+.download-panel {
+  margin-top: 2.25em;
+  padding: 1.5em;
+  border-radius: 14px;
+  background: rgba(67,179,224,0.08);
+}
+
+.button.small-button,
+.small-button {
+  font-size: 0.9em;
+  padding: 0.75em 1.2em;
+  max-width: none;
+}
+
+.button.alt {
+  background-color: #444 !important;
+}
+
+.photo-caption {
+  text-align: center;
+}
+
+.contact-grid .contact-info,
+.contact-grid .contact-links {
+  margin-bottom: 0;
+}
+
+.contact-links ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-links li {
+  margin: 0.55em 0;
+}
+
+.code-page header {
+  max-width: 900px;
+  margin: 0 auto 2em auto;
+}
+
+.compact-footer {
+  padding: 3em 0;
+}
+
+@media screen and (max-width: 980px) {
+  body {
+    padding-top: 7em;
+  }
+
+  #nav .nav-content {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .cv-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-actions,
+  .project-actions {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding-top: 8em;
+  }
+
+  #nav a {
+    padding: 0.5em 0.65em;
+    font-size: 0.85em;
+  }
+
+  .language-switch button {
+    padding: 0.4em 0.65em;
+  }
+
+  .info-card,
+  .publication-card,
+  .project-card {
+    padding: 1.1em;
+  }
+}
